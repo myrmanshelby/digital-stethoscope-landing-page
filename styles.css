@@ -222,6 +222,10 @@ div.hero-buttons > .demo-button {
     align-self: stretch;
 }
 
+div.abstract-process-header > p {
+    max-width: 80%;
+}
+
 div.abstract-process-header > h2 {
     align-self: stretch;
     text-align: center;
@@ -438,4 +442,197 @@ div.card-text > p.member-pos {
     font-size: 1.125rem;
     font-weight: 400;
     margin: 0;
+}
+
+@media (max-width: 900px) {
+    /* NAVIGATION */
+    hgroup {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links,
+    .nav-buttons {
+        display: none;
+    }
+
+    header > a {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-left p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .lilguy {
+        display: none;
+    }
+
+    /* OVERVIEW SECTION */
+    .overview {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .overview-blurb > img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .blurb-text > h3 {
+        font-size: 1.25rem;
+    }
+
+    .blurb-text > p {
+        font-size: 1rem;
+    }
+
+    /* ABSTRACT & PROCESS */
+    .content-box {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .content-box > img,
+    .content-box > video {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .content-box-right {
+        max-width: 100%;
+        margin: 0 3rem;
+    }
+
+    .text-content {
+        padding: 1rem;
+    }
+
+    section.abstract-process-header > h2 {
+        font-size: 2rem;
+    }
+
+    section.abstract-process-header > p {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    /* DEMO */
+    .demo {
+        padding: 2rem 1rem;
+    }
+
+    section.demo > p {
+        max-width: 80%;
+    }
+
+    section.demo > iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TEAM SECTION */
+    .team {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 0;
+    }
+
+    .carousel-track {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .card.active {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .card-text {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    div.card > img {
+        display: none;
+    }
+
+    .carousel-btn {
+        order: -1;
+    }
+
+    /* Carousel Button Styling for Mobile */
+    .carousel-btn {
+        background: none;
+        padding: 0.5rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Make them smaller */
+    .chevron {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    /* Optional: stack buttons horizontally and center them */
+    .team {
+        align-items: center;
+    }
+
+    .carousel-btn.prev,
+    .carousel-btn.next {
+        position: relative;
+        order: 0;
+        margin: 1rem;
+    }
 }
