@@ -27,9 +27,9 @@ button:hover {
 /* Nav bar */
 hgroup {
     display: flex;
-    padding: 1.25rem; /*change this*/
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 nav {
@@ -103,23 +103,26 @@ header > a {
 .hero {
     display: flex;
     align-items: center;
-    gap: 5rem;
-    padding: 5rem;
+    justify-content: center;
+    gap: 4rem;
+    padding-left: 3rem;
 }
 
 .lilguy {
-    width: 37.5rem;
-    height: 39.242rem;
+    width: 30rem;
+    height: 31rem;
+    padding: 2rem
 }
 
 .hero-left {
     display: flex;
-    width: 37.5rem;
+    max-width: 38%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
     align-self: stretch;
+    margin: 1rem 0;
 }
 
 div.hero-left > h1 {
@@ -127,12 +130,14 @@ div.hero-left > h1 {
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 800;
+    margin: 0;
 }
 
 div.hero-left > p {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
+    margin: 0;
 }
 
 .hero-buttons {
@@ -157,7 +162,7 @@ div.hero-buttons > .demo-button {
 
 .overview {
     display: flex;
-    padding: 5rem;
+    padding: 4rem 8rem;
     justify-content: center;
     align-items: flex-start;
     gap: 5rem;
@@ -183,10 +188,8 @@ div.hero-buttons > .demo-button {
 
 .blurb-text {
     display: flex;
-    padding: 1.25rem 0rem;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     align-self: stretch;
     background: #AFCFD1;
 }
@@ -194,20 +197,21 @@ div.hero-buttons > .demo-button {
 .blurb-text > p {
     background: #AFCFD1;
     text-align: center;
+    margin: 0;
 }
 
 .blurb-text > h3 {
     background: #AFCFD1;
+    margin: 1.5rem 0 0.75rem 0;
 }
 
 /* Abstract & Process Sections Styling */
 .abstract, .process {
     display: flex;
-    padding: 5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     align-self: stretch;
 }
 
@@ -215,7 +219,6 @@ div.hero-buttons > .demo-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
     align-self: stretch;
 }
 
@@ -225,6 +228,7 @@ div.abstract-process-header > h2 {
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 800;
+    margin: 3rem 0 1rem 0;
 }
 
 div.abstract-process-header > p {
@@ -232,46 +236,56 @@ div.abstract-process-header > p {
     font-style: normal;
     font-weight: 400;
     text-align: center;
+    max-width: 60%;
+    margin: 0 3rem 1rem 3rem;
 }
 
 .content-box {
     display: flex;
     align-items: center;
-    align-self: stretch;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
 }
 
 .content-box > img {
-    width: 36rem;
-    height: 39.375rem;
+    max-width: 36%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 4rem;
 }
 
 .content-box > video {
-    width: 35.28906rem;
-    height: 36.875rem;
-    aspect-ratio: 564.63/590.00;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
     border-radius: 20rem;
+    margin-bottom: 4rem
 }
 
 .content-box-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex: 1 0 0;
+    justify-content: center;
+    flex: 1;
+    max-width: 40%;
+    margin-bottom: 3rem;
 }
 
 .text-content {
     display: flex;
-    padding: 0.5rem 0rem 0.5rem 3rem;
+    padding: 0.5rem 5rem 0.5rem 2.5rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.75rem;
     align-self: stretch;
     border-left: 3px solid #CBD5E1;
+    margin-bottom: 1rem
     
 }
 
 .text-content > h4 {
+    margin: 0;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -286,6 +300,7 @@ div.abstract-process-header > p {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
+    margin: 0 3rem 0 0;
 }
 
 .text-content.active > p {
@@ -299,13 +314,9 @@ div.abstract-process-header > p {
 /* Demo Section */
 .demo {
     display: flex;
-    height: 49.875rem;
-    padding: 5rem;
+    padding: 3rem 5rem 4rem 5rem;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 5rem;
-    align-self: stretch;
     background: #AFCFD1;
 }
 
@@ -314,12 +325,16 @@ section.demo > h2 {
     font-style: normal;
     font-weight: 800;
     background: #AFCFD1;
+    margin: 0;
 }
 
 section.demo > p {
     font-size: 1.125rem;
+    max-width: 60%;
+    margin: 0.5rem 0 1.5rem 0;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
     background: #AFCFD1;
 }
 
@@ -334,11 +349,10 @@ section.demo > iframe {
 
 .team {
     display: flex;
-    padding: 5rem;
+    padding: 5rem 1rem;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    align-self: stretch;
     background: #AFCFD1;
 }
 
@@ -352,20 +366,10 @@ section.demo > iframe {
     background: #AFCFD1;
 }
 
-/*
-div.card {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    flex: 1 0 0;
-    background: #AFCFD1;
-}
-
-
-*/
 .carousel-track {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -378,6 +382,7 @@ div.card {
 .card.active {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5rem;
     flex: 1 0 0;
     background: #AFCFD1;
@@ -385,33 +390,25 @@ div.card {
 
 div.card > img {
     display: flex;
-    width: 30rem;
-    height: 30rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
+    max-width: 40%;
+    height: auto;
     border-radius: 1.25rem;
     background: #AFCFD1;
-
 }
 
 div.card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    align-self: stretch;
     background: #AFCFD1;
+    max-width: 40%;
 }
 
 div.card-text > h3 {
-    align-self: stretch;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.1875rem;
     text-transform: uppercase;
     background: #AFCFD1;
+    margin: 1.5rem 0;
 }
 
 div.card-text > p {
@@ -419,22 +416,26 @@ div.card-text > p {
     font-style: normal;
     font-weight: 400;
     background: #AFCFD1;
+    margin: 1.5rem 0;
 }
 
 span.quote {
     background: #AFCFD1;
     color: #F5ADA4;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
+    margin: 0;
 }
 
 div.card-text > p.member-name {
     font-size: 1.25rem;
     font-weight: 500;
+    margin: 0.25rem 0;
 }
 
 div.card-text > p.member-pos {
     font-size: 1.125rem;
     font-weight: 400;
+    margin: 0;
 }
