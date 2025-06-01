@@ -1,0 +1,440 @@
+* {
+    color: #334C5C;
+    font-family: Roboto, sans-serif;
+    background: #F0F3F6;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Nav bar */
+hgroup {
+    display: flex;
+    padding: 1.25rem; /*change this*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding-left: 0;
+}
+
+ul.nav-links > li {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.031rem;
+}
+
+header > a {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.nav-buttons {
+    display: flex;
+    padding: 0.75rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-button {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+
+    color: #4E797C;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.031rem;
+}
+
+.repo-button {
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    border: 0.125rem solid #4E797C;
+    background: #4E797C;
+
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.031rem;
+}
+
+/* Hero section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+.lilguy {
+    width: 37.5rem;
+    height: 39.242rem;
+}
+
+.hero-left {
+    display: flex;
+    width: 37.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+div.hero-left > h1 {
+    align-self: stretch;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+div.hero-left > p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+div.hero-buttons > .repo-button {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+div.hero-buttons > .demo-button {
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Overview Section */
+
+.overview {
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    align-self: stretch;
+
+    background: #AFCFD1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.overview-blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #AFCFD1;
+}
+
+.overview-blurb > img {
+    width: 6.5rem;
+    height: 6.5rem;
+    aspect-ratio: 1/1;
+    background: #AFCFD1;
+}
+
+.blurb-text {
+    display: flex;
+    padding: 1.25rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    background: #AFCFD1;
+}
+
+.blurb-text > p {
+    background: #AFCFD1;
+    text-align: center;
+}
+
+.blurb-text > h3 {
+    background: #AFCFD1;
+}
+
+/* Abstract & Process Sections Styling */
+.abstract, .process {
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    align-self: stretch;
+}
+
+.abstract-process-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+div.abstract-process-header > h2 {
+    align-self: stretch;
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+div.abstract-process-header > p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.content-box > img {
+    width: 36rem;
+    height: 39.375rem;
+}
+
+.content-box > video {
+    width: 35.28906rem;
+    height: 36.875rem;
+    aspect-ratio: 564.63/590.00;
+    border-radius: 20rem;
+}
+
+.content-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+}
+
+.text-content {
+    display: flex;
+    padding: 0.5rem 0rem 0.5rem 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    border-left: 3px solid #CBD5E1;
+    
+}
+
+.text-content > h4 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.text-content > h4:hover {
+    cursor: pointer;
+}
+
+.text-content > p {
+    display: none;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-content.active > p {
+    display: block;
+}
+
+.text-content.active {
+    border-left: 3px solid #334C5C;
+}
+
+/* Demo Section */
+.demo {
+    display: flex;
+    height: 49.875rem;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    align-self: stretch;
+    background: #AFCFD1;
+}
+
+section.demo > h2 {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 800;
+    background: #AFCFD1;
+}
+
+section.demo > p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    background: #AFCFD1;
+}
+
+section.demo > iframe {
+    width: 42rem;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+/* Team Section */
+
+.team {
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    align-self: stretch;
+    background: #AFCFD1;
+}
+
+.carousel-btn {
+    background: #AFCFD1;
+}
+
+.chevron {
+    width: 3rem;
+    height: 3rem;
+    background: #AFCFD1;
+}
+
+/*
+div.card {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex: 1 0 0;
+    background: #AFCFD1;
+}
+
+
+*/
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    display: none;
+}
+
+.card.active {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex: 1 0 0;
+    background: #AFCFD1;
+}
+
+div.card > img {
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    background: #AFCFD1;
+
+}
+
+div.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    background: #AFCFD1;
+}
+
+div.card-text > h3 {
+    align-self: stretch;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    background: #AFCFD1;
+}
+
+div.card-text > p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    background: #AFCFD1;
+}
+
+span.quote {
+    background: #AFCFD1;
+    color: #F5ADA4;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+div.card-text > p.member-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+div.card-text > p.member-pos {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
